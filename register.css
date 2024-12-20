@@ -1,0 +1,158 @@
+*{
+    text-decoration: none;
+}
+body{
+    background-image: url(images/2.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+}
+nav > .login {
+    position: absolute;
+    right: 45px;
+}
+nav > a:hover{
+    background: #00b4d8;
+}
+nav > a:active{
+    background: #90e0ef;
+}
+nav > .user{
+    overflow: hidden;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #90e0ef;
+    border-radius: 50%;
+    right: 0;
+}
+nav > .user::before{
+    background-color: #468cb3;
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    height: 30px;
+    width: 40px;
+    content: "";
+    top: 25px;
+}
+nav > .user::after{
+    background-color: #468cb3;
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    content: "";
+    bottom: 25px;
+    margin: auto;
+}
+.logowanie{
+    margin: 20px auto;
+    width: 500px;
+    height: 450px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.tytul{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+
+}
+.input{
+    width: 100%;
+    height: 100%;
+}
+form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 30px;
+}
+button{
+    margin: 12px auto;
+    width: 300px;
+    height: 50px;
+    color: #0056b3;
+    font-weight: bold;
+    font-size: 30px;
+}
+form > a{
+    font-weight: bold;
+    color:#0077b6;
+    margin-top: 10px;
+    text-align: center;
+}
+form > a:hover{
+    color:#00b4d8;
+
+}
+.Privacy_Policy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Privacy_Policy > label{
+    font-size: 14px;
+    text-decoration:underline;
+    text-decoration-color: #0077b6;
+    text-underline-offset: 1    px; /* Przesuwa podkreślenie w dół */
+}
+.Privacy_Policy > input{
+    width: 15px;
+    margin: 0;
+    margin-left: 5px;
+}
+.Privacy_Policy > label > a{
+    font-weight: bold;
+    color:#0077b6;
+}
+.Privacy_Policy > label > a:hover{
+    color:#00b4d8;
+}
+
+
+/* STOPKA */
+footer{
+    position:absolute;
+    top: calc(100vh - 30px);
+    width: 100vw;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0077b6;
+}
+@media only screen and (max-width: 706px) {
+    .logowanie{
+        width: auto;
+    }
+    nav{
+        justify-content: center;
+        height: 18vw;
+    }
+    nav > a,.login{
+        padding: 1vw;
+        font-size: calc(4vw - 2px);
+        background-color: #0056b3;
+        border-radius: 2px;
+        margin: 1vw;
+    }
+    nav > .user{
+        display: none;
+    }
+    nav > .login{
+        position: relative;
+        right: 0;
+    }
+}
