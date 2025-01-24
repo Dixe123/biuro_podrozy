@@ -1,0 +1,51 @@
+*{
+    text-decoration: none;
+}
+.kontener{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: fit-content;
+    background-color: #e3fbff;
+}
+.naglowek > h3{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.paragraf{
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+li{
+    margin-left: 50px;
+}
+/* STOPKA */
+footer{
+    width: 100vw;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0077b6;
+}
+@media only screen and (max-width: 706px) {
+    .kontener{
+        width: auto;
+    }
+    nav{
+        justify-content: center;
+        height: 18vw;
+    }
+    nav > a,.login{
+        padding: 1vw;
+        font-size: calc(4vw - 2px);
+        background-color: #0056b3;
+        border-radius: 2px;
+        margin: 1vw;
+    }
+}
